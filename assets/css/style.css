@@ -140,9 +140,11 @@ blockquote p {
 
 .form-control{
 background: #FEF7F1;
-border: 0.5px solid rgba(243, 104, 74, 0.08);
+border: 1px solid #FF7A00;;
 border-radius: 2px;
+
 }
+
 
 button.form-control{
     background: #EB7100;
