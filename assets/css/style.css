@@ -83,6 +83,10 @@ a.nav-link{
     height: 400px;
 }
 
+.carousel-caption{
+    bottom: 3.2rem;
+}
+
 .carousel-indicators .active {
     background-color: #EB7100;
 }
