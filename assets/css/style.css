@@ -19,7 +19,7 @@ h1{
 
 p{
     color: #333333;
-    line-height: 2.5rem;
+    line-height: 1.5;
 }
 
 #home{
@@ -66,7 +66,7 @@ hr{
 }
 
 a.nav-link{
-    color: #ffffff !important;
+    color: #ffffff ;
     font-weight: 600;
 }
 
@@ -83,12 +83,15 @@ a.nav-link{
     height: 400px;
 }
 
-.carousel-caption{
-    bottom: 3.2rem;
+a.nav-link:hover{
+    color: #7c4007;
 }
-
 .carousel-indicators .active {
     background-color: #EB7100;
+}
+
+.col-sm.mt-3 img{
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.7);
 }
 
 .carousel-indicators{
@@ -116,7 +119,7 @@ transform: translateY(-50%);
 }
 
 blockquote {
-    margin: .5rem 10px;
+    margin: -0.5rem 10px;
     padding:  10px;
     quotes: "\201C""\201D""\2018""\2019";
     color: #000;
@@ -132,7 +135,7 @@ blockquote {
 blockquote:after {
 	content: '”';
 	right: -5rem;
-    bottom: -1rem;
+    bottom: -2rem;
     font-size: 2em;
 }
 
@@ -149,6 +152,11 @@ border-radius: 2px;
 
 }
 
+.testimonial-carousel{
+    width: 100%;
+    height: 500px;
+}
+
 
 button.form-control{
     background: #EB7100;
@@ -158,10 +166,16 @@ button.form-control{
 div.no-height p{
     line-height: 1.5rem;
 }
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23e70' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   }
+   
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23e70' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
 
 @media (min-width: 768px){
    
-
     #testimonialcarouselExampleIndicators{
         height: fit-content; 
     }
@@ -180,11 +194,35 @@ div.no-height p{
     }
 
     #servicesCarouselExampleIndicators > .carousel-inner img{
-        width: 100%;
-        height: auto;
+        align-self: center;
     }
 }
 
-@media (min-width:1200px){
-    
+@media (min-width:1125px){
+
+    h1{
+        position: absolute;
+        left: 2rem;
+        font-size: 10rem;
+        top:39.5rem;
+        width: max-content;
+    }
+
+    #job-title{
+        position: absolute;
+        left: 7rem;
+        font-size: 4rem !important;
+        top:23rem;
+        transform: rotate(-90.44deg);
+    }
+
+
+    #servicesCarouselExampleIndicators > .carousel-inner{
+        align-self: center;
+    }
+
+    .testimonial-carousel{
+        width: 100%;
+        height: 580px;
+    }
 }
