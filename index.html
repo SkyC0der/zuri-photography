@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://kit.fontawesome.com/9b1c8d52ed.js" crossorigin="anonymous"></script>
     <title>Zuri Photography</title>
@@ -13,7 +12,7 @@
 <body>
     <!-- Heading Section -->
     <div class="text-white mb-3 " id="home">
-        <nav class="navbar text-center navbar-light fixed-top">
+        <nav class="navbar   navbar-light fixed-top">
             <a class="navbar-brand text-white font-weight-bold" href="#">Zuri Photography</a>
             <button class="navbar-toggler border-0 " type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
                   <span><i class="fas fa-bars"></i></span>
@@ -21,11 +20,11 @@
       
             <div class="collapse navbar-collapse" id="navbarsExample05">
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#home">Home</a>
+                <li class="nav-item">
+                  <a class="nav-link"  href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">About Me</a>
+                  <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse"  href="#about">About Me</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#services">Services</a>
@@ -39,16 +38,24 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#contact">Contact</a>
                 </li>
+                <p class="text-white mb-0">
+                  Copyright © Zuri Studios <script>document.write(new Date().getFullYear())</script>
+                </p>
+                <div class="">
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-pinterest"></i>
+                </div>
               </ul>
             </div>
-        </nav>
-        <div class="mt-4">
-            <img src="./assets/images/portfolio_background.png" class="img-fluid mt-2" alt="portfolio_background">
-              <div class="centered text-center container">
-                <h1>Zuri Ivy</h1>
-                <h2>Photographer</h2>
-              </div>
-        </div>           
+        </nav>       
+      <div class=""> 
+      <img src="./assets/images/portfolio_background.png" class="mt-2 img-fluid" alt="portfolio_background">
+      </div>
+         <div class="centered text-center ">
+            <h1>Zuri Ivy</h1>
+            <h2>Photographer</h2>
+          </div>    
     </div>
 
     <!-- About Section -->
@@ -77,7 +84,7 @@
             <div class=" font-weight-bold text-center display-5 mb-4">MY AWARDS</div>
             
             <!-- Awards Carousel -->
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -110,8 +117,26 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
+              </div> -->
+              <div class="row">
+                <div class="col-sm mt-3">
+                  <img class="d-block w-100 h-auto" src="./assets/images/award_1.png" class="img-fluid" alt="First slide">
+                </div>
+                <div class="col-sm mt-3">
+                  <img class="d-block w-100" src="./assets/images/award_2.png" class="img-fluid" alt="Second slide">
+                </div>
+                <div class="col-sm mt-3">
+                  <img class="d-block w-100" src="./assets/images/award_3.png" class="img-fluid" alt="Third slide">
+                </div>
+                <div class="col-sm mt-3">
+                  <img class="d-block w-100" src="./assets/images/award_4.png" class="img-fluid" alt="Fourth slide">
+                </div>
+                <div class="col-sm mt-3">
+                  <img class="d-block w-100" src="./assets/images/award_5.png" class="img-fluid" alt="Fifth slide">
+                </div>
               </div>
-        </div>
+        
+            </div>
     </div>
 
     <!-- Services Section -->
@@ -129,8 +154,8 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner text-uppercase">
-        <div class="carousel-item active">
+      <div class="carousel-inner  text-uppercase">
+        <div class="carousel-item container-fluid h-auto active">
           <img class="d-block w-100" src="./assets/images/services_1.png" class="img-fluid" alt="First slide">
           <div class="carousel-caption d-md-block text-uppercase ">
             <h5 class="small mb-0 mt-0 font-weight-bold">Wedding</h5>
@@ -192,7 +217,7 @@
     </div>
 
     <!-- Testimonial Section -->
-    <div id="testimonial" class=" mt-5">
+    <div id="testimonial" class=" container h-auto mt-5">
       <div class="heading text-center container ">
         <p class="small mb-0 font-weight-bold">What Do People Say </p>
         <h2 class="mb-0 font-weight-bold">TESTIMONIALS</h2>
@@ -200,14 +225,14 @@
      </div>
 
      <!-- Testimonial Carousel -->
-     <div id="testimonialcarouselExampleIndicators" class="carousel slide" data-ride="carousel">
+     <div id="testimonialcarouselExampleIndicators" class="carousel slide container " data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
       </ol>
       <div class="carousel-inner text-uppercase">
         <div class="carousel-item active white-out">
-          <img class="d-block w-100" src="./assets/images/testimonial_1.png" class="img-fluid" alt="First slide">
+          <img class="d-block w-100" src="./assets/images/testimonial_1.jpg" class="img-fluid" alt="First slide">
           <div class="carousel-caption d-md-block testimonial-center">
             <blockquote class="w-100">
               <p>
@@ -261,11 +286,17 @@
 
        <!-- Contact Form -->
        <form action="#">
-         <input type="text" class="form-control mb-3" name="name" placeholder="Name">
-         <input type="text" class="form-control mb-3" name="name" placeholder="Email">
-         <textarea name="message" class="form-control" placeholder="Your Message Here..."  cols="30" rows="10"></textarea>
-         <button type="button" class="btn btn-primary mt-3 mb-4 form-control submit">Send <img src="./assets/images/send-button-icon.svg" alt=""> </button>
-       </form>
+         <div class="row">
+          <div class="col-sm-8">
+            <textarea name="message" class="form-control mb-3" placeholder="Your Message Here..."  cols="30" rows="6"></textarea>
+          </div>
+          <div class="col-sm-4">
+            <input type="text" class="form-control mb-3 " name="name" placeholder="Name">
+            <input type="text" class="form-control mb-3 " name="name" placeholder="Email">
+            <button type="button" class="btn btn-primary mt-3 mb-4 form-control submit">Send <img src="./assets/images/send-button-icon.svg" alt=""> </button>  
+          </div>
+         </div>
+      </form>
 
      <!-- Contact Hotlines -->
      <div class="container mt-3">
