@@ -105,7 +105,7 @@ a.nav-link:hover{
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(255,255,255,.3);
+        background: rgba(24, 21, 21, 0.6);
     }
 
 .filter{
@@ -121,7 +121,7 @@ blockquote {
     margin: -0.5rem 10px;
     padding:  10px;
     quotes: "\201C""\201D""\2018""\2019";
-    color: #000;
+    color: #fff;
 }
  blockquote:before {
   content: open-quote;
@@ -140,7 +140,7 @@ blockquote:after {
 
 blockquote p {
     display: inline;
-    color: #000000;
+    color: #fff;
     font-size: 14px;
   }
 
