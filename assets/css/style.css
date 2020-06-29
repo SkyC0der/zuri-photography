@@ -227,7 +227,7 @@ div.no-height p{
         position: absolute;
         left: 2rem;
         font-size: 10rem;
-        top:39.5rem;
+        top:24.5rem;
         width: max-content;
     }
 
@@ -235,7 +235,7 @@ div.no-height p{
         position: absolute;
         left: 7rem;
         font-size: 4rem !important;
-        top:23rem;
+        top:20rem;
         transform: rotate(-90.44deg);
     }
 
