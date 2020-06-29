@@ -173,6 +173,15 @@ div.no-height p{
 }
 
 @media (min-width: 768px){
+
+    h1{
+        font-size: 7rem;
+        margin-top: 12rem;
+    }
+
+    #home h2{
+        font-size: 2rem;
+    }
    
     #testimonialcarouselExampleIndicators{
         height: fit-content; 
@@ -193,6 +202,22 @@ div.no-height p{
 
     #servicesCarouselExampleIndicators > .carousel-inner img{
         align-self: center;
+    }
+
+    .icon-row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .icon{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0 !important;
+    }
+
+    .icon-text{
+        margin-left: 0 !important;
+        margin-top: 1rem;
     }
 }
 
